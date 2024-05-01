@@ -238,18 +238,8 @@ class FormActivity : AppCompatActivity(), View.OnClickListener {
     ): Boolean {
         var errorBag = 0
 
-        if (nik.isEmpty() || nik.count() in 15..17) {
-            elNik.error = "NIK kosong!"
-            errorBag += 1
-        }
-
         if (nama.isEmpty()) {
             elNama.error = "Nama kosong!"
-            errorBag += 1
-        }
-
-        if (tanggal.isEmpty()) {
-            //elTanggal.error = "Tanggal lahir kosong!"
             errorBag += 1
         }
 
